@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pandemi Survey</title>
+    </head>
+    <body>
+        <div>
+        <h1 id="title">Survey Kegiatan selama WFH</h1>
+        <p id="description">Apa saja kegiatan anda selama masa pandemi ini?</p>
+        <div style="background-color: aqua;" class="container">
+            <form id="survey-form">
+                <label for="name">Nama:</label><br>
+                <input id="name" type="text" placeholder="Nama Anda" required><br>
+                <label for="email">Email:</label><br>
+                <input id="email" type="text" placeholder="Email Anda" required><br>
+                <label for="age">Umur:</label><br>
+                <input id="number" type="number" placeholder="Umur Anda" min="10" max="99" required><br>
+                <div>
+                <label for="work">Pekerjaan:</label><br>
+                <input list="work" name="work" placeholder="Pekerjaan" required>
+                <datalist id="work">
+                  <option value="Pelajar">
+                  <option value="Wiraswasta">
+                  <option value="Wirausaha">
+                  <option value="Freelancer">
+                  <option value="Ibu Rumah Tangga">
+                  <option value="Lain-lain">    
+                </datalist>
+                <input type="submit">
+                </div>
+                <label for="opinion">Bagaimana dampak kebijakan Work From Home ini bagi anda?</label><br>
+                <input type="radio" name="opinion" value="a"> Sangat Terpengaruh</input><br>
+                <input type="radio" name="opinion" value="b"> Terpengaruh</input><br>
+                <input type="radio" name="opinion" value="c"> Tidak Terpengaruh</input><br>
+                <input type="radio" name="opinion" value="d"> Biasa Saja</input><br>
+                <div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+    </body>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
