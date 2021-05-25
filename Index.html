@@ -2,11 +2,11 @@
 <html>
     <link rel="stylesheet" type="text/css" href="CSS/Style.css">
     <head>
-        <title>Survey Genre Music</title>
+        <title>Music Taste</title>
     </head>
     <body>
         <div class="container">
-            <header>
+            <header class="header">
                 <h1 id="title">What's Your Music Taste?</h1>
                 <p id="description">
                     Tell us about what kinda music you're listening to
@@ -40,7 +40,7 @@
                         class="input-box"
                         type="number" 
                         placeholder="Your Age" 
-                        min="15" max="99" 
+                        min="10" max="99" 
                         required
                     />
                 </div><br>
@@ -61,24 +61,28 @@
                     <p>How do you listen to your music?</p>
                     <label>
                         <input 
+                        class="radio-player"
                         type="radio" 
                         name="player" 
                         value="speaker"> With Speaker</input><br>
                     </label>
                     <label>
                         <input 
+                        class="radio-player"
                         type="radio" 
                         name="player" 
                         value="headphone"> With Headphone</input><br>
                     </label>
                     <label>
                         <input 
+                        class="radio-player"
                         type="radio" 
                         name="player" 
                         value="earphone"> With Earphone</input><br>
                     </label>
                     <label>
                         <input 
+                        class="radio-player"
                         type="radio" 
                         name="player" 
                         value="live"> Watch it live</input><br>
@@ -88,21 +92,14 @@
                     <p>Can you play instrument?</p>
                     <select id="dropdown" class="input-box" name="instrument" required>
                         <option disabled selected value>What is it?</option>
+                        <option value="none">I Cant</option>
                         <option value="Guitar">Guitar</option>
                         <option value="Drum">Drum</option>
                         <option value="Piano">Piano</option>
                         <option value="Bass">Bass</option>
                         <option value="Violin">Violin</option>
-                        <option value="other">Other(Comment below)</option>    
-                    </select><br><br>
-                    <div>
-                        <textarea
-                        id="comments"
-                        class="input-textarea"
-                        name="comment"
-                        placeholder="Enter your instrument..."
-                        ></textarea>  
-                    </div>
+                        <option value="other">Other</option>    
+                    </select>
                 </div><br>
                 <div clas="form-group">
                     <p>
@@ -110,93 +107,105 @@
                     </p>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="Classical">Classical
+                            value="Classical"> Classical
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="Country">Country
+                            value="Country"> Country
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="EDM">Electronic dance music (EDM)
+                            value="EDM"> Electronic dance music (EDM)
                         </input>    
-                    </label><br>
+                    </label>
+                    <label>
+                        <input
+                            class="Checkbox-genre" 
+                            type="checkbox"
+                            name="genre"
+                            value="Hip-Hop"> Hip-Hop
+                        </input>    
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="Hip-Hop">Hip-Hop
+                            value="Jazz"> Jazz
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="Jazz">Jazz
+                            value="Blues"> Blues
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="Blues">Blues
+                            value="Metal"> Metal
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="Metal">Metal
+                            value="Pop"> Pop
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="Pop">Pop
+                            value="r&b"> Rhythm & blues (R&B)
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="r&b">Rhythm & blues (R&B)
+                            value="rock"> Rock
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="rock">Rock
+                            value="kpop"> KPop
                         </input>    
-                    </label><br>
+                    </label>
                     <label>
                         <input 
+                            class="Checkbox-genre"
                             type="checkbox"
                             name="genre"
-                            value="kpop">KPop
+                            value="other"> Other (type bellow)
                         </input>    
-                    </label><br>
-                    <label>
-                        <input 
-                            type="checkbox"
-                            name="genre"
-                            value="other">Other (type bellow)
-                        </input>    
-                    </label><br><br>
+                    </label>
                     <textarea
-                    id="comments"
-                    class="input-textarea"
-                    name="comment"
-                    placeholder="type your genre..."
+                        id="comments"
+                        class="textarea"
+                        name="comment"
+                        placeholder="type your genre..."
                     ></textarea>  
                 </div><br>
                 <div class="form-group">
