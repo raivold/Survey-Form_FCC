@@ -1,44 +1,210 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Pandemi Survey</title>
+        <title>Survey Genre Music</title>
     </head>
     <body>
-        <div>
-        <h1 id="title">Survey Kegiatan selama WFH</h1>
-        <p id="description">Apa saja kegiatan anda selama masa pandemi ini?</p>
         <div class="container">
+            <header>
+                <h1 id="title">What's Your Music Taste?</h1>
+                <p id="description">
+                    Tell us about what kinda music you're listening to
+                </p>
+            </header>
             <form id="survey-form">
-                <label for="name">Nama:</label><br>
-                <input id="name" type="text" placeholder="Nama Anda" required><br>
-                <label for="email">Email:</label><br>
-                <input id="email" type="text" placeholder="Email Anda" required><br>
-                <label for="age">Umur:</label><br>
-                <input id="number" type="number" placeholder="Umur Anda" min="10" max="99" required><br>
-                <div>
-                <label for="work">Pekerjaan:</label><br>
-                <input list="work" name="work" placeholder="Pekerjaan" required>
-                <datalist id="work">
-                  <option value="Pelajar">
-                  <option value="Wiraswasta">
-                  <option value="Wirausaha">
-                  <option value="Freelancer">
-                  <option value="Ibu Rumah Tangga">
-                  <option value="Lain-lain">    
-                </datalist>
-                <input type="submit">
+                <div clas="form-group">
+                    <label id="name-label" for="name">Your Name</label><br>
+                    <input 
+                        id="name" 
+                        class="input-box"
+                        type="text" 
+                        placeholder="Nama Anda" 
+                        required
+                    />
                 </div>
-                <label for="opinion">Bagaimana dampak kebijakan Work From Home ini bagi anda?</label><br>
-                <input type="radio" name="opinion" value="a"> Sangat Terpengaruh</input><br>
-                <input type="radio" name="opinion" value="b"> Terpengaruh</input><br>
-                <input type="radio" name="opinion" value="c"> Tidak Terpengaruh</input><br>
-                <input type="radio" name="opinion" value="d"> Biasa Saja</input><br>
-                <div>
-
+                <div clas="form-group">
+                    <label id="email-label" for="email">Your Email</label><br>
+                    <input 
+                        id="email" 
+                        class="input-box"
+                        type="email" 
+                        placeholder="Email Anda" 
+                        required
+                    />
                 </div>
+                <div clas="form-group">
+                    <label id="number-label" for="age">Your Age</label><br>
+                    <input 
+                        id="number" 
+                        class="input-box"
+                        type="number" 
+                        placeholder="Umur Anda" 
+                        min="15" max="99" 
+                        required
+                    />
+                </div>
+                <div clas="form-group">
+                    <p>What's your music platform of choices?</p>
+                    <select id="dropdown" class="input-box" name="role" required>
+                        <option disabled selected value>What's Your Choices</option>
+                        <option value="itunes">Apple Music or iTunes</option>
+                        <option value="Spotify">Spotify</option>
+                        <option value="YTMusic">Youtube Music</option>
+                        <option value="Deezer">Deezer</option>
+                        <option value="Tidal">Tidal</option>
+                        <option value="Local">Locally Download</option>
+                        <option value="other">Other</option>      
+                    </select>
+                </div>
+                <div clas="form-group">
+                    <p>How do you listen to your music?</p>
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="player" 
+                        value="speaker"> With Speaker</input><br>
+                    </label>
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="player" 
+                        value="headphone"> With Headphone</input><br>
+                    </label>
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="player" 
+                        value="earphone"> With Earphone</input><br>
+                    </label>
+                    <label>
+                        <input 
+                        type="radio" 
+                        name="player" 
+                        value="live"> Watch it live</input><br>
+                    </label>
+                </div>
+                <div clas="form-group">
+                    <p>Can you play instrument?</p>
+                    <select id="dropdown" class="input-box" name="instrument" required>
+                        <option disabled selected value>What is it?</option>
+                        <option value="Guitar">Guitar</option>
+                        <option value="Drum">Drum</option>
+                        <option value="Piano">Piano</option>
+                        <option value="Bass">Bass</option>
+                        <option value="Violin">Violin</option>
+                        <option value="other">Other(Comment below)</option>    
+                    </select><br><br>
+                    <div>
+                        <textarea
+                        id="comments"
+                        class="input-textarea"
+                        name="comment"
+                        placeholder="Enter your instrument..."
+                        ></textarea>  
+                    </div>
+                </div>
+                <div clas="form-group">
+                    <p>
+                        Whats your favorite music genre?
+                    </p>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="Classical">Classical
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="Country">Country
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="EDM">Electronic dance music (EDM)
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="Hip-Hop">Hip-Hop
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="Jazz">Jazz
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="Blues">Blues
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="Metal">Metal
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="Pop">Pop
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="r&b">Rhythm & blues (R&B)
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="rock">Rock
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="kpop">KPop
+                        </input>    
+                    </label><br>
+                    <label>
+                        <input 
+                            type="checkbox"
+                            name="genre"
+                            value="other">Other (type bellow)
+                        </input>    
+                    </label><br><br>
+                    <textarea
+                    id="comments"
+                    class="input-textarea"
+                    name="comment"
+                    placeholder="type your genre..."
+                    ></textarea>  
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                      Submit
+                    </button>
+                  </div>
             </form>
         </div>
-    </div>
     </body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </html>
